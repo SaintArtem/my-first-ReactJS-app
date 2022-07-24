@@ -1,0 +1,23 @@
+.userPhoto {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 50%;
+}
+
+.generalWrapper {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-template-rows: 1fr;
+}
+
+.rightSide {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+
+.location {
+      text-align: right;
+      padding-right: 150px;
+}
