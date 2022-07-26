@@ -26,6 +26,11 @@ const Navbar = () => {
                 >Music</NavLink>
             </div>
             <div className={s.item}>
+                <NavLink to="/users"
+                    style={({ isActive }) => ({ color: isActive ? 'gold' : '#fff' })}
+                >Users</NavLink>
+            </div>
+            <div className={s.item}>
                 <NavLink to="/settings"
                     style={({ isActive }) => ({ color: isActive ? 'gold' : '#fff' })}
                 >Settings</NavLink>

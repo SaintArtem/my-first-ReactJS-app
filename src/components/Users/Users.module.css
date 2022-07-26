@@ -21,3 +21,14 @@
       text-align: right;
       padding-right: 150px;
 }
+
+.selectedPage {
+      font-size: 18px;
+      font-weight: 700;
+}
+
+.paginationWrapper {
+      display: grid;
+      margin-bottom: 20px;
+      grid-template-columns: repeat(50, 1fr);
+}

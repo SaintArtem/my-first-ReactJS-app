@@ -12,6 +12,5 @@ let reducersPack = combineReducers({
 });
 
 let store = createStore(reducersPack);
-console.log(store)
 
 export default store;
