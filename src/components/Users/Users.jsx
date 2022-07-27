@@ -1,6 +1,7 @@
 import React from "react";
 import s from './Users.module.css';
 import userPhoto from '../../assets/images/userPhoto.png';
+import { NavLink } from "react-router-dom";
 
 let Users = (props) => {
 
@@ -12,7 +13,6 @@ let Users = (props) => {
       }
 
       let buttons = pages.map(p => {
-            console.log(pages);
             return <button onClick={(e) => { props.onPageChanged(p) }} type="button" className={props.currentPage === p && s.selectedPage}>{p}</button>
       })
 
@@ -25,7 +25,9 @@ let Users = (props) => {
                         props.users.map(u => <div className={s.generalWrapper} key={u.id}>
                               <div className={s.leftSide}>
                                     <div>
-                                          <img className={s.userPhoto} src={u.photos.small != null ? u.photos.small : userPhoto} alt={u.fullName} />
+                                          <NavLink to={'/profile/'+u.id}>
+                                                <img className={s.userPhoto} src={u.photos.small != null ? u.photos.small : userPhoto} alt={u.fullName} />
+                                          </NavLink>
                                     </div>
                                     <div>
                                           {
