@@ -6,3 +6,13 @@
 .header svg {
     width: 100px;
 }
+
+.loginBlock {
+    float: right;
+    margin-right: 100px;
+}
+
+.loginBlock a {
+    color: green;
+    margin-right: 100px;
+}
