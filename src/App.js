@@ -9,7 +9,7 @@ import Settings from './components/Settings/Settings';
 import UsersContainer from './components/Users/UsersContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
 
-const App = (props) => {
+const  App = (props) => {
   return (
     <BrowserRouter>
       <div className="_container app-wrapper">
