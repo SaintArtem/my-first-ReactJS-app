@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Users.module.css';
-import userPhoto from '../../assets/images/userPhoto.png';
+import userPhoto from '../../assets/images/user-pic.svg';
 import { NavLink } from "react-router-dom";
 import { userAPI } from "../../api/api";
 

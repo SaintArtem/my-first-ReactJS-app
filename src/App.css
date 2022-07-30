@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 .app-wrapper {
   display: grid;
 
@@ -5,18 +7,25 @@
     "h h"
     "n c";
 
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 50px 1fr;
   grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
+  grid-gap: 15px 30px;
 }
 
 .app-wrapper-content {
   grid-area: c;
-  background-color: cornflowerblue;
+  background-color: transparent;
 }
 
 ._container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background: linear-gradient(0deg, rgba(50, 215, 106, 0.01), rgba(50, 215, 106, 0.01)), #313131;
+  color: #DBDBDB;
 }

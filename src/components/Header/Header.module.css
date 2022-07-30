@@ -1,6 +1,104 @@
 .header {
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
     grid-area: h;
-    background-color: lightgreen;
+    background-color: #404040;
+}
+
+._container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerWrapper {
+    height: 50px;
+}
+
+.headerList {
+    height: inherit;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 160px 230px 50px 50px 1fr;
+    margin: 0;
+}
+
+.headerList li {
+    height: inherit;
+}
+
+.searchBlock {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.logoBlock {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.modalsWrapper {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalsBtn {
+    background: transparent;
+    border: none;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.modalsBtn:hover {
+    background: #676767;
+}
+
+.modalsBtn img {
+    width: 28px;
+    height: 28px;
+}
+
+.mainSearch {
+    padding: 0px 15px 0px 35px;
+    background-color: #797979;
+    color: #DBDBDB;
+    height: 30px;
+    outline: 0;
+    border: none;
+    border-radius: 30px;
+    background-image: url('./../../assets/images/search.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.mainSearch::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #DBDBDB;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    opacity: 1;
+    /* Firefox */
+}
+
+.mainSearch:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+}
+
+.mainSearch::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
 }
 
 .header svg {
@@ -8,11 +106,10 @@
 }
 
 .loginBlock {
-    float: right;
-    margin-right: 100px;
+    width: 100px;
+    margin: 0 0 0 auto;
 }
 
 .loginBlock a {
     color: green;
-    margin-right: 100px;
 }

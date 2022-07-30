@@ -1,10 +1,49 @@
 .nav {
     grid-area: n;
-    background-color: burlywood;
-    padding: 20px;
+    background-color: transparent;
+    width: 130px;
+}
+
+.item {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.item:not(:last-of-type) {
+    margin-bottom: 10px;
 }
 
 .item a {
+    align-items: center;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
     color: #fff;
+    font-size: 13px;
     text-decoration: none;
+    padding: 2.5px 5px 2.5px;
+}
+
+.item:hover {
+    background-color: rgba(50, 215, 106, 0.12);
+}
+
+.flexWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.imageWrapper {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.imageWrapper img {
+    width: 20px;
+    height: 20px;
 }
