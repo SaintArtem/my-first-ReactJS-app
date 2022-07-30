@@ -2,7 +2,6 @@ import React from "react";
 import s from './Users.module.css';
 import userPhoto from '../../assets/images/user-pic.svg';
 import { NavLink } from "react-router-dom";
-import { userAPI } from "../../api/api";
 
 let Users = (props) => {
 
@@ -34,22 +33,10 @@ let Users = (props) => {
                                           {
                                                 u.followed
                                                       ? <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
-                                                            props.toggleFollowingInProgress(true, u.id);
-                                                            userAPI.unfollowUser(u.id).then(data => {
-                                                                  if (data.resultCode === 0) {
-                                                                        props.unfollow(u.id);
-                                                                  }
-                                                                  props.toggleFollowingInProgress(false, u.id);
-                                                            })
+                                                            props.unfollow(u.id);
                                                       }}>Unfollow</button>
                                                       : <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
-                                                            props.toggleFollowingInProgress(true, u.id);
-                                                            userAPI.followUser(u.id).then(data => {
-                                                                  if (data.resultCode === 0) {
-                                                                        props.follow(u.id);
-                                                                  }
-                                                                  props.toggleFollowingInProgress(false, u.id);
-                                                            })
+                                                            props.follow(u.id);
                                                       }}>Follow</button>
                                           }
                                     </div>
